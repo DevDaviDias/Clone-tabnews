@@ -1,7 +1,9 @@
 function Home() {
-  return <h1>
-    Em contrução 🧑‍🔧🔧
-  </h1>;
+  return<div>
+  <h1>DESBRAVANDO O MUNDO DO CÓDIGO</h1>
+  <h2>Construindo Soluções Digitais com Criatividade e Experiência</h2>
+  <p> Em construção ...🧑‍🔧🔧</p>
+  </div>;
 }
 function teste() {
   console.log("teste");
