@@ -1,9 +1,13 @@
+import { Component } from "react";
+import Header from"../componentes/Header";
+
+
 function Home() {
-  return<div>
-  <h1>DESBRAVANDO O MUNDO DO CÓDIGO</h1>
-  <h2>Construindo Soluções Digitais com Criatividade e Experiência</h2>
-  <p> Em construção ...🧑‍🔧🔧</p>
-  </div>;
+  return(
+    <div >
+      <Header/>
+    </div>
+  );
 }
 function teste() {
   console.log("teste");
@@ -13,4 +17,5 @@ function teste2() {
 }
 export default Home;
 console.log("oi")
+
 
