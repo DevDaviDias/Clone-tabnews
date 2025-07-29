@@ -1,9 +1,13 @@
 .tempo{
-  background-color: #f8f8FF;
-  padding: 0px 0px 40px 40px;
   color:#5BD3E4;
-  width: 100%;
+  
 }
+
+.tempodiv{
+background-color: #f8f8FF;
+width: 100%;
+}
+
 .tempo.dark-mode {
   background-color: #000000;
   width: 100%;
