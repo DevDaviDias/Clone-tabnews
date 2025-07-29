@@ -1,3 +1,4 @@
+import styles from "../styles/Tempo.module.css"
 import { useEffect, useState } from "react";
 
 export default function Tempo() {
@@ -11,8 +12,7 @@ export default function Tempo() {
 
   return (
     <div>
-      <h2>Horário atual</h2>
-      <div dangerouslySetInnerHTML={{ __html: data }} />
+      <h2 className={styles.tempo} dangerouslySetInnerHTML={{ __html: data }} />
     </div>
   );
 }
