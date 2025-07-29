@@ -1,0 +1,169 @@
+/* Botão Hambúrguer */
+.hamburguer {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+
+  position: fixed; /* <- Fica fixo na tela */
+  top: 20px;       /* Distância do topo */
+  right: 20px;     /* Fica no lado direito */
+  z-index: 1001;   /* Sempre acima do menu */
+}
+
+.bar {
+  height: 4px;
+  background: #5BD3E4;
+  border-radius: 2px;
+}
+.titleName{
+ color:var(--branco);
+ font-size: 2em;
+ margin-left: 1em;
+}
+.navRedesSociais{
+  display: flex;
+  gap: 16px;
+  margin-left: 1.8em;
+}
+.navRedesSociais a{
+   text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.navRedesSociais > a > i {
+ font-size: 1.5em;
+}
+.tituloIcone{
+  margin:0  1em  0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+
+
+/* Menu Lateral */
+.menuLateral {
+  position: fixed;
+  top: 0;
+  left: -270px; /* Escondido inicialmente */
+  width: 230px;
+  height: 100%;
+  background: #5BD3E4;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+.menuLateral.aberto {
+  left: 0; /* Aparece */
+}
+
+.menuLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+  margin-left: 0.8em;
+}
+
+.menuLinks a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.menuLinks a:hover {
+  color: #0070f3;
+}
+
+/* Botão de fechar */
+.btnFechar {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+/* Fundo escurecido */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+.darkModeSwitch {
+  margin-top: 0; /* fica no final do menu */
+  display: flex;
+  margin-left: 3em;
+  padding: 20px 0;
+}
+
+/* Esconde o checkbox padrão */
+.darkModeSwitch input {
+  display: none;
+}
+
+/* Slider customizado */
+.slider {
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  background: #ccc;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 19px;
+  height: 19px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+/* Quando marcado */
+.darkModeSwitch input:checked + .slider {
+  background: #333;
+}
+
+.darkModeSwitch input:checked + .slider::before {
+  transform: translateX(25px);
+}
+
+/* Ícone sol/lua */
+.icon {
+  margin-left: 10px;
+  font-size: 20px;
+}
+/* Quando menu estiver aberto */
+.hamburguer.ativo .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+
+.hamburguer.ativo .bar:nth-child(2) {
+  opacity: 0; /* Desaparece o meio */
+}
+
+.hamburguer.ativo .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -8px);
+}

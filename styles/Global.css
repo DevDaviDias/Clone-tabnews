@@ -1,7 +1,14 @@
+:root{
+  --azul:#5BD3E4;
+  --branco:#FFFF;
+}
 body{
   margin:0;
   padding: 0;
-  background-color: aqua;
+  background-color: var(--azul);
 }
 
-
+body.dark-mode {
+  background: #121212;
+  color: white;
+}

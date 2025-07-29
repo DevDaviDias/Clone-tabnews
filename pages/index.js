@@ -1,6 +1,8 @@
 import { Component } from "react";
 import Header from"../componentes/Header";
+import Main from"../componentes/Main";
 import Tempo from "../componentes/Tempo";
+import MenuHamburguer from "../componentes/MenuHamberguer";
 
 
 
@@ -8,8 +10,11 @@ import Tempo from "../componentes/Tempo";
 function Home() {
   return(
     <div >
+      <MenuHamburguer/>
       <Header/>
+      <Main/>
       <Tempo/>
+      
     </div>
 
   );

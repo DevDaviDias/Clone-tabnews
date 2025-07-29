@@ -1,0 +1,15 @@
+.fundo{
+  background-color: #0D1117;
+  padding: 40px 40px 40px 40px;
+ 
+}
+.titulo{
+  color :#F0F6FC;
+}
+
+.subtitulo{
+  color:var(--azul);
+}
+.paragrafo{
+  color:#FFD33C;
+}

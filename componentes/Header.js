@@ -1,12 +1,45 @@
+import { useState, useEffect } from "react";
 import styles from "../styles/Header.module.css";
 
+export default function Header() {
+  const [text, setText] = useState("");
+  const [deleting, setDeleting] = useState(false);
+  const [index, setIndex] = useState(0);
+  const fullText = "Front end";
 
-function Header(){
-  return(
-  <div className={styles.fundo}>
-   <h1 className={styles.titulo}>DESBRAVANDO O MUNDO DO CÓDIGO</h1>
-   <h2 className={styles.subtitulo}>Construindo Soluções Digitais com Criatividade e Experiência</h2>
-   <p className={styles.paragrafo}> Em construção ...🧑‍🔧🔧</p>
-  </div>);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!deleting) {
+        // Digitando
+        setText(fullText.slice(0, index + 1));
+        setIndex((prev) => prev + 1);
+
+        if (index + 1 === fullText.length) {
+          setDeleting(true);
+        }
+      } else {
+        // Apagando
+        setText(fullText.slice(0, index - 1));
+        setIndex((prev) => prev - 1);
+
+        if (index - 1 === 0) {
+          setDeleting(false);
+        }
+      }
+    }, 250);
+
+    return () => clearInterval(interval);
+  }, [index, deleting]);
+
+  return (
+    <div className={styles.fundo}>
+      <div className={styles.titleCenter}>
+      <h1 className={styles.titulo}>Davi Dias</h1>
+      <h2 className={styles.subtitulo}>
+        Developer <span className={styles.typing}>{text}</span>
+        <span className={styles.cursor}>|</span>
+      </h2>
+      </div>
+    </div>
+  );
 }
-export default Header;
