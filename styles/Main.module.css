@@ -13,6 +13,7 @@
 }
 .paragrafo{
   color:#FFD33C;
+  font-size: 1.3em;
 }
 
 /*dark mode*/
@@ -24,4 +25,18 @@
 }
 .titulo.dark-mode{
   color :#f8f8FF;
+}
+
+@media (min-width: 1024px) {
+  .titulo{
+  margin-left: 25%;
+}
+.subtitulo{
+  margin-left: 25%;
+}
+.paragrafo{
+  margin-left: 25%;
+  font-size: 1.3em;
+}
+
 }

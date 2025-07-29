@@ -46,10 +46,18 @@
 
 /* Quando o menu está fixo no desktop */
 @media (min-width: 1024px) {
-  .fundo {
-    margin-top:250px ;
-    margin-left: 250px; 
-    align-items: center;
-    justify-content: center;
-  }
+  
+    .titleCenter{
+  margin-top: 10%;
+  align-items: center;
+  margin-left: 32%;
+}
+.titulo{
+  font-size: 4em;
+}
+.subtitulo{
+  font-size: 4em;
+}
+
+
 }
