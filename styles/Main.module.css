@@ -1,11 +1,11 @@
 .fundo{
-  background-color: #0D1117;
+  background-color: #f8f8FF;
   width: 100%;
   padding: 40px;
  
 }
 .titulo{
-  color :#F0F6FC;
+  color :#666a6e;
 }
 
 .subtitulo{
@@ -13,4 +13,12 @@
 }
 .paragrafo{
   color:#FFD33C;
+}
+
+/*dark mode*/
+.fundo.dark-mode {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 40px;
+ 
 }
