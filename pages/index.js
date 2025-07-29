@@ -1,21 +1,23 @@
 import { Component } from "react";
 import Header from"../componentes/Header";
+import Tempo from "../componentes/Tempo";
+
+
 
 
 function Home() {
   return(
     <div >
       <Header/>
+      <main>
+        <Tempo/>
+      </main>
     </div>
+
   );
 }
-function teste() {
-  console.log("teste");
-}
-function teste2() {
-  console.log("identação errada");
-}
+
+
 export default Home;
-console.log("oi")
 
 
