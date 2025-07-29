@@ -9,9 +9,7 @@ function Home() {
   return(
     <div >
       <Header/>
-      <main>
-        <Tempo/>
-      </main>
+       <Tempo/>
     </div>
 
   );
