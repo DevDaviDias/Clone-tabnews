@@ -47,6 +47,9 @@
 /* Quando o menu está fixo no desktop */
 @media (min-width: 1024px) {
   .fundo {
-    margin-left: 250px; /* mesma largura do menu lateral */
+    margin-top:250px ;
+    margin-left: 250px; 
+    align-items: center;
+    justify-content: center;
   }
 }
