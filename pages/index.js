@@ -8,8 +8,8 @@ import Tempo from "../componentes/Tempo";
 function Home() {
   return(
     <div >
+      <Tempo/>
       <Header/>
-       <Tempo/>
     </div>
 
   );

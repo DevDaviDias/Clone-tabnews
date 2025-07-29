@@ -22,6 +22,8 @@ export default function Tempo() {
   }, []);
 
   return (
-      <h2 className={styles.tempo}>{hora}</h2> 
+    <div>
+      <h2 className={styles.tempo}>{hora}</h2>
+    </div>
   );
 }
