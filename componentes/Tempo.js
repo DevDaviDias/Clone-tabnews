@@ -2,17 +2,28 @@ import styles from "../styles/Tempo.module.css"
 import { useEffect, useState } from "react";
 
 export default function Tempo() {
-  const [data, setData] = useState("");
+  const [hora, setHora] = useState("");
 
   useEffect(() => {
-    fetch("/api/tempo")
-      .then((res) => res.text())
-      .then((html) => setData(html));
+    const atualizarHora = () => {
+      const agora = new Date();
+      const horaAtual = agora.toLocaleTimeString("pt-BR", {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+      });
+      setHora(horaAtual);
+    };
+
+    atualizarHora(); // Atualiza imediatamente
+    const timer = setInterval(atualizarHora, 1000); // Atualiza a cada 1s
+
+    return () => clearInterval(timer); // Limpa o timer ao desmontar
   }, []);
 
   return (
     <div>
-      <h2 className={styles.tempo} dangerouslySetInnerHTML={{ __html: data }} />
+      <h2 className={styles.tempo}>{hora}</h2>
     </div>
   );
 }
