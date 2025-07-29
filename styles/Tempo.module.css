@@ -1,7 +1,12 @@
 .tempo{
-   background-color: #f8f8FF;
+  background-color: #f8f8FF;
   padding: 0px 0px 40px 40px;
   color:#5BD3E4;
-  margin:0;
   width: 100%;
+}
+.tempo.dark-mode {
+  background-color: #000000;
+  width: 100%;
+  padding: 40px;
+ 
 }

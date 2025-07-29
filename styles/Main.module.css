@@ -1,11 +1,10 @@
-.fundo{
-  background-color: #f8f8FF;
+.fundo1{
   width: 100%;
   padding: 40px;
  
 }
 .titulo{
-  color :#666a6e;
+  color :#000000;
 }
 
 .subtitulo{
@@ -16,8 +15,8 @@
 }
 
 /*dark mode*/
-.fundo.dark-mode {
-  background-color: #ffffff;
+.fundo1.dark-mode {
+  background-color: #000000;
   width: 100%;
   padding: 40px;
  
