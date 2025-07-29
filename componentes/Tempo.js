@@ -21,10 +21,10 @@ export default function Tempo() {
     return () => clearInterval(timer); // Limpa o timer ao desmontar
   }, []);
 
-  return (
-    <div className={styles.tempodiv}>
-      <h2 className={styles.tempo}>{hora}</h2>
+  return //(
+   //  <div className={styles.tempodiv}>
+  //    <h2 className={styles.tempo}>{hora}</h2>
       
-   </div>
-  );
+  // </div>
+ // );
 }

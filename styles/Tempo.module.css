@@ -6,11 +6,11 @@
 .tempodiv{
 background-color: #f8f8FF;
 width: 100%;
+display: flex;
+align-items: center;
 }
 
 .tempo.dark-mode {
   background-color: #000000;
-  width: 100%;
-  padding: 40px;
  
 }
