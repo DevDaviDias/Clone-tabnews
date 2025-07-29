@@ -4,10 +4,28 @@ import styles from "../styles/MenuHamburguer.module.css";
 export default function MenuHamburguer() {
   const [aberto, setAberto] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
 
-  const toggleMenu = () => setAberto(!aberto);
+  const toggleMenu = () => {
+    // Só alterna no mobile
+    if (!isDesktop) setAberto(!aberto);
+  };
 
-  // Alterna o tema adicionando/removendo a classe no body
+  // Detecta largura da tela
+  useEffect(() => {
+    const handleResize = () => {
+      const desktop = window.innerWidth >= 1024;
+      setIsDesktop(desktop);
+      setAberto(desktop); // Se for desktop, sempre aberto
+    };
+
+    handleResize(); // Executa na primeira renderização
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Alterna dark mode
   useEffect(() => {
     if (darkMode) {
       document.body.classList.add("dark-mode");
@@ -18,20 +36,28 @@ export default function MenuHamburguer() {
 
   return (
     <>
-      {/* Botão Hambúrguer */}
-      <div
-  className={`${styles.hamburguer} ${aberto ? styles.ativo : ""}`}
-  onClick={toggleMenu}
->
-        <div className={styles.bar}></div>
-        <div className={styles.bar}></div>
-        <div className={styles.bar}></div>
-      </div>
+      {/* Botão Hambúrguer só no mobile */}
+      {!isDesktop && (
+        <div
+          className={`${styles.hamburguer} ${aberto ? styles.ativo : ""}`}
+          onClick={toggleMenu}
+        >
+          <div className={styles.bar}></div>
+          <div className={styles.bar}></div>
+          <div className={styles.bar}></div>
+        </div>
+      )}
 
       {/* Menu Lateral */}
-      <div className={`${styles.menuLateral} ${aberto ? styles.aberto : ""}`}>
-        <button className={styles.btnFechar} onClick={toggleMenu}></button>
-        
+      <div
+        className={`${styles.menuLateral} ${aberto ? styles.aberto : ""} ${
+          darkMode ? styles.darkMode : ""
+        }`}
+      >
+        {!isDesktop && (
+          <button className={styles.btnFechar} onClick={toggleMenu}></button>
+        )}
+
         {/* Avatar e nome */}
         <div className={styles.tituloIcone}>
           <i className="fas fa-user-circle fa-2x"></i>
@@ -45,7 +71,7 @@ export default function MenuHamburguer() {
           <a href="#" className={styles.icons}><i className="fab fa-linkedin fa-2x"></i></a>
         </nav>
 
-        {/* Links do menu */}
+        {/* Links */}
         <nav className={styles.menuLinks}>
           <a href="#"><i className="fas fa-user icon-circle"></i> Sobre mim</a>
           <a href="#"><i className="fas fa-code icon-circle"></i> Minhas Skills</a>
@@ -53,7 +79,7 @@ export default function MenuHamburguer() {
           <a href="#"><i className="fas fa-folder-open icon-circle"></i> Meus Projetos</a>
         </nav>
 
-        {/* Switch de Dark Mode no final do menu */}
+        {/* Switch Dark Mode */}
         <div className={styles.darkModeSwitch}>
           <label>
             <input
@@ -66,8 +92,10 @@ export default function MenuHamburguer() {
         </div>
       </div>
 
-      {/* Fundo escurecido */}
-      {aberto && <div className={styles.overlay} onClick={toggleMenu}></div>}
+      {/* Overlay só no mobile */}
+      {!isDesktop && aberto && (
+        <div className={styles.overlay} onClick={toggleMenu}></div>
+      )}
     </>
   );
 }
