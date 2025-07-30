@@ -6,15 +6,19 @@
 }
 .titulo{
   color :#000000;
+  font-size: 30px;
 }
 
 .subtitulo{
-  color:var(--azul);
+  color:#000000;
+  font-size: 15px;
+  width: 20em;
 }
 .paragrafo{
   color:#FFD33C;
   font-size: 1.3em;
 }
+
 
 /*dark mode*/
 .fundo1.dark-mode {
@@ -26,6 +30,17 @@
 .titulo.dark-mode{
   color :#f8f8FF;
 }
+.icon-circle {
+  display: grid;
+  grid-template-columns: repeat(2, 40px);
+  grid-template-rows: repeat(2, 40px);
+  gap: 5px;
+  background: #222;
+  padding: 10px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (min-width: 1024px) {
   .titulo{
@@ -33,10 +48,16 @@
 }
 .subtitulo{
   margin-left: 25%;
+  width: 900px;
+  font-size: 1.2em;
 }
 .paragrafo{
   margin-left: 25%;
   font-size: 1.3em;
+}
+.iconCircle{
+  margin-left: 25%;
+  
 }
 
 }

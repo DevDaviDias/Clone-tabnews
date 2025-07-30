@@ -51,8 +51,8 @@
 .menuLateral {
   position: fixed;
   top: 0;
-  left: -270px; /* Escondido inicialmente */
-  width: 230px;
+  left: -350px; /* Escondido inicialmente */
+  width: 310px;
   height: 100%;
   background: #5BD3E4;
   box-shadow: 2px 0 10px rgba(0,0,0,0.2);
