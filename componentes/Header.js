@@ -34,7 +34,7 @@ export default function Header() {
   return (
     <div className={styles.fundo}>
       <div className={styles.titleCenter}>
-      <h1 className={styles.titulo}>Davi Dias</h1>
+      <h1 className={styles.titulo}>Davi dias</h1>
       <h2 className={styles.subtitulo}>
         Developer <span className={styles.typing}>{text}</span>
         <span className={styles.cursor}>|</span>

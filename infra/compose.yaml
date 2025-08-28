@@ -1,0 +1,9 @@
+services:
+  database:
+    image: "postgres:16.10-alpine3.22"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: LOCAL_PASSWORD
+      POSTGRES_DB: tabnews
+    ports:
+      - "5432:5432"
