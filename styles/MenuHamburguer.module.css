@@ -21,7 +21,7 @@
 .titleName{
  color:var(--branco);
  font-size: 2em;
- text-align: center;
+ margin-left: 2em;
 }
 .navRedesSociais{
   display: flex;
@@ -35,7 +35,7 @@
   transition: 0.2s;
 }
 .navRedesSociais > a > i {
- font-size: 3.5em;
+ font-size: 1.5em;
 }
 .tituloIcone{
   margin:0  1em  0 0;
