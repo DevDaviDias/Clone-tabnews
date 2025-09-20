@@ -71,7 +71,7 @@ export default function MenuHamburguer() {
         height={150}
         style={{
           borderRadius: "50%",
-          border: "2px solid #293157" // sem ponto e vírgula
+          border: "4px solid #293157" // sem ponto e vírgula
         }}
       />
     </div>
