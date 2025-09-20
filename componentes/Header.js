@@ -5,7 +5,7 @@ export default function Header() {
   const [text, setText] = useState("");
   const [deleting, setDeleting] = useState(false);
   const [index, setIndex] = useState(0);
-  const fullText = "Full-Stack";
+  const fullText = "Front-end";
 
   useEffect(() => {
     const interval = setInterval(() => {
