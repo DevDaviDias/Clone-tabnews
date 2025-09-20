@@ -77,13 +77,27 @@
 
 .menuLinks a {
   text-decoration: none;
-  color: black;
-  font-weight: bold;
-  transition: 0.2s;
+  color: #333; /* cor mais suave que preto */
+  font-weight: 600;
+  font-size: 18px; /* aumenta a letra */
+  padding: 10px 15px; /* deixa o link mais “clicável” */
+  border-radius: 8px; /* cantos arredondados */
+  transition: all 0.3s ease; /* transição suave */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espaço entre ícone e texto */
 }
 
 .menuLinks a:hover {
-  color: #0070f3;
+  background-color: #0070f3; /* fundo azul no hover */
+  color: #fff; /* texto branco */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* sombra suave */
+  transform: translateX(5px); /* efeito de movimento sutil */
+}
+
+/* Se quiser, aumenta o tamanho dos ícones */
+.menuLinks a i {
+  font-size: 20px;
 }
 
 /* Botão de fechar */
