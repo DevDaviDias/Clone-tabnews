@@ -5,7 +5,7 @@ import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaNodeJs} from "react-icon
 
 function Main(){
   return(
-  <div className={styles.fundo1}>
+  <div className={styles.fundo1} id="sobre">
    <h2 className={styles.titulo}>Minhas skills</h2>
    <p className={styles.subtitulo}>
   Sou Davi Dias, apaixonado por tecnologia e desenvolvimento web.

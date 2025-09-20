@@ -73,7 +73,7 @@ export default function MenuHamburguer() {
 
         {/* Links */}
         <nav className={styles.menuLinks}>
-          <a href="#"><i className="fas fa-user icon-circle"></i> Sobre mim</a>
+          <a href="#sobre"><i className="fas fa-user icon-circle"></i> Sobre mim</a>
           <a href="#"><i className="fas fa-code icon-circle"></i> Minhas Skills</a>
           <a href="#"><i className="fas fa-graduation-cap icon-circle"></i> Formações</a>
           <a href="#"><i className="fas fa-folder-open icon-circle"></i> Meus Projetos</a>
