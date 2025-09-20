@@ -67,9 +67,12 @@ export default function MenuHamburguer() {
       <Image 
         src="/img.davi.jpg"   // está dentro da pasta public
         alt="Davi Dias"
-        width={300}
-        height={300}
-        style={{ borderRadius: "50%" }}
+        width={150}
+        height={150}
+        style={{
+          borderRadius: "50%",
+          border: "2px solid #293157" // sem ponto e vírgula
+        }}
       />
     </div>
            
