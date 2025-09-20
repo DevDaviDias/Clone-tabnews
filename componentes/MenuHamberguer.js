@@ -60,23 +60,49 @@ export default function MenuHamburguer() {
 
         {/* Avatar e nome */}
         <div className={styles.tituloIcone}>
-          <i className="fas fa-user-circle fa-2x"></i>
+          <a
+            href="#sobre"
+            style={{ display: "flex", alignItems: "center", gap: "10px" }}
+          >
+            <img
+              src="/img/minhaImagem.png"
+              alt="Usuário"
+              width={40}
+              height={40}
+              style={{ borderRadius: "50%" }} // deixa circular
+            />
+            Sobre mim
+          </a>
         </div>
         <h2 className={styles.titleName}>Davi Dias</h2>
 
         {/* Redes sociais */}
         <nav className={styles.navRedesSociais}>
-          <a href="#" className={styles.icons}><i className="fab fa-instagram fa-2x"></i></a>
-          <a href="#" className={styles.icons}><i className="fab fa-github fa-2x"></i></a>
-          <a href="#" className={styles.icons}><i className="fab fa-linkedin fa-2x"></i></a>
+          <a href="#" className={styles.icons}>
+            <i className="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="#" className={styles.icons}>
+            <i className="fab fa-github fa-2x"></i>
+          </a>
+          <a href="#" className={styles.icons}>
+            <i className="fab fa-linkedin fa-2x"></i>
+          </a>
         </nav>
 
         {/* Links */}
         <nav className={styles.menuLinks}>
-          <a href="#sobre"><i className="fas fa-user icon-circle"></i> Sobre mim</a>
-          <a href="#"><i className="fas fa-code icon-circle"></i> Minhas Skills</a>
-          <a href="#"><i className="fas fa-graduation-cap icon-circle"></i> Formações</a>
-          <a href="#"><i className="fas fa-folder-open icon-circle"></i> Meus Projetos</a>
+          <a href="#sobre">
+            <i className="fas fa-user icon-circle"></i> Sobre mim
+          </a>
+          <a href="#">
+            <i className="fas fa-code icon-circle"></i> Minhas Skills
+          </a>
+          <a href="#">
+            <i className="fas fa-graduation-cap icon-circle"></i> Formações
+          </a>
+          <a href="#">
+            <i className="fas fa-folder-open icon-circle"></i> Meus Projetos
+          </a>
         </nav>
 
         {/* Switch Dark Mode */}

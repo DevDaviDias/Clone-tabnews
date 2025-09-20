@@ -89,7 +89,7 @@
 }
 
 .menuLinks a:hover {
-  background-color: #0070f3; /* fundo azul no hover */
+  background-color: #00bef3; /* fundo azul no hover */
   color: #fff; /* texto branco */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* sombra suave */
   transform: translateX(5px); /* efeito de movimento sutil */
