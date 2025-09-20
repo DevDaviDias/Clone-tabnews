@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import styles from "../styles/MenuHamburguer.module.css";
 
+import Image from "next/image";
+
 export default function MenuHamburguer() {
   const [aberto, setAberto] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
@@ -60,19 +62,18 @@ export default function MenuHamburguer() {
 
         {/* Avatar e nome */}
         <div className={styles.tituloIcone}>
-          <a
-            href="#sobre"
-            style={{ display: "flex", alignItems: "center", gap: "10px" }}
-          >
-            <img
-              src="/img/minhaImagem.png"
-              alt="Usuário"
-              width={40}
-              height={40}
-              style={{ borderRadius: "50%" }} // deixa circular
-            />
-            Sobre mim
-          </a>
+         
+              <div>
+      <Image 
+        src="/img.davi.jpg"   // está dentro da pasta public
+        alt="Davi Dias"
+        width={300}
+        height={300}
+        style={{ borderRadius: "50%" }}
+      />
+    </div>
+           
+          
         </div>
         <h2 className={styles.titleName}>Davi Dias</h2>
 
