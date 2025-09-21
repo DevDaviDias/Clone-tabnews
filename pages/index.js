@@ -4,7 +4,7 @@ import Main from"../componentes/Main";
 import Section from"../componentes/Section";
 import Tempo from "../componentes/Tempo";
 import MenuHamburguer from "../componentes/MenuHamberguer";
-import Footer from "../componentes/Footer";
+import Footer from "../styles/Footer.module.css";
 
 
 
