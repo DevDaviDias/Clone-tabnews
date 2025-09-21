@@ -186,4 +186,6 @@
   text-align: center;
   font-size: 0.8rem;
   color: #aaa;
+  bottom: 0;       /* colado embaixo */
+  left: 0;
 }
