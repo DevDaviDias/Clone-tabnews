@@ -1,6 +1,8 @@
 .fundo1{
   width: 100%;
-  background-color:#f8f8FF ;
+  align-items: center;
+  display: flex;
+  justify-content: center;
  
 }
 .titulo{
@@ -14,10 +16,7 @@
   width: 19em;
   font-size: 1.1em;
 }
-.paragrafo{
-  color:#FFD33C;
-  font-size: 1.3em;
-}
+
 .iconCircle{
   display: flex ;
   align-items: center;
