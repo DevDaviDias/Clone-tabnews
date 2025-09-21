@@ -67,11 +67,11 @@ export default function MenuHamburguer() {
       <Image 
         src="/img.davi.jpg"   // está dentro da pasta public
         alt="Davi Dias"
-        width={150}
-        height={150}
+        width={120}
+        height={120}
         style={{
           borderRadius: "50%",
-          border: "4px solid #293157" // sem ponto e vírgula
+          border: "8px solid #293157" // sem ponto e vírgula
         }}
       />
     </div>
@@ -121,6 +121,11 @@ export default function MenuHamburguer() {
           </label>
         </div>
       </div>
+
+        {/* Footer dentro do menu */}
+        <div className={styles.footerMenu}>
+          <p>© Copyright DaviDias</p>
+        </div>
 
       {/* Overlay só no mobile */}
       {!isDesktop && aberto && (

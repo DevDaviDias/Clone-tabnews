@@ -51,6 +51,12 @@
   align-items: center;
 }
 
+.footerMenu {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
 @media (min-width: 1024px) {
   .titulo{
   margin-left: 25%;
