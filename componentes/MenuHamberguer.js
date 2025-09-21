@@ -62,34 +62,40 @@ export default function MenuHamburguer() {
 
         {/* Avatar e nome */}
         <div className={styles.tituloIcone}>
-         
-              <div>
-      <Image 
-        src="/img.davi.jpg"   // está dentro da pasta public
-        alt="Davi Dias"
-        width={120}
-        height={120}
-        style={{
-          borderRadius: "50%",
-          border: "8px solid #293157" // sem ponto e vírgula
-        }}
-      />
-    </div>
-           
-          
+          <div>
+            <Image
+              src="/img.davi.jpg" // está dentro da pasta public
+              alt="Davi Dias"
+              width={120}
+              height={120}
+              style={{
+                borderRadius: "50%",
+                border: "8px solid #293157", // sem ponto e vírgula
+              }}
+            />
+          </div>
         </div>
         <h2 className={styles.titleName}>Davi Dias</h2>
 
         {/* Redes sociais */}
         <nav className={styles.navRedesSociais}>
-          <a href="#" className={styles.icons}>
+          <a
+            href="https://www.instagram.com/devdavidias/"
+            className={styles.icons}
+          >
             <i className="fab fa-instagram fa-2x"></i>
           </a>
-          <a href="#" className={styles.icons}>
+          <a href="https://github.com/DevDaviDias" className={styles.icons}>
             <i className="fab fa-github fa-2x"></i>
           </a>
-          <a href="#" className={styles.icons}>
+          <a
+            href="https://www.linkedin.com/in/devdavidias/"
+            className={styles.icons}
+          >
             <i className="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="mailto:devdavidias@gmail.com" className={styles.icons}>
+            <i className="fas fa-envelope fa-2x"></i>
           </a>
         </nav>
 
@@ -125,8 +131,6 @@ export default function MenuHamburguer() {
           <p>© Copyright DaviDias</p>
         </div>
       </div>
-
-        
 
       {/* Overlay só no mobile */}
       {!isDesktop && aberto && (
