@@ -15,7 +15,7 @@ function Main(){
 
    <div className={styles.iconCircle}>
   <div className="icon-circle">
-  <FaJs color="#1572B6" size={150} />
+  <FaJs color="#1781cdff" size={150} />
   <FaReact color="#61DAFB" size={150} />
   <FaGitAlt size={150} color="#61DAFB" />
   <FaNodeJs size={150} color="#1572B6" />
