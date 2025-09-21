@@ -1,10 +1,9 @@
 .fundo2 {
   padding: 40px 20px;
   background:white; /* azul claro */
-  padding: 40px 40px 40px 40px;
-   height: 50dvh;        
+  padding: 40px 40px 40px 40px;       
   width: 100%; 
-  display: flex; 
+
 }
 
 .titulo {
