@@ -1,6 +1,7 @@
 import { Component } from "react";
 import Header from"../componentes/Header";
 import Main from"../componentes/Main";
+import Section from"../componentes/section";
 import Tempo from "../componentes/Tempo";
 import MenuHamburguer from "../componentes/MenuHamberguer";
 
@@ -13,6 +14,7 @@ function Home() {
       <MenuHamburguer/>
       <Header/>
       <Main/>
+      <Section/>
       <Tempo/>
       
     </div>
