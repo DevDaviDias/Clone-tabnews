@@ -1,6 +1,7 @@
 .fundo2 {
   padding: 40px 20px;
-  background: #5884c7; /* azul claro */
+  background:white; /* azul claro */
+  width: 100%;
 }
 
 .titulo {
@@ -22,6 +23,7 @@
   border-radius: 16px;
   box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
   text-align: center;
+  height: 500px;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
