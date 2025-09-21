@@ -180,3 +180,10 @@
 .hamburguer.ativo .bar:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -8px);
 }
+
+.footerMenu {
+  background-color:#293157 ;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #aaa;
+}

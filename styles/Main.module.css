@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 40px 40px 40px 40px;      /* Ocupa 100% da altura da tela */
+  padding: 40px 40px 40px 40px;      
   width: 100%; 
 
  
@@ -51,11 +51,7 @@
   align-items: center;
 }
 
-.footerMenu {
-  text-align: center;
-  font-size: 0.8rem;
-  color: #aaa;
-}
+
 
 @media (min-width: 1024px) {
   .titulo{
