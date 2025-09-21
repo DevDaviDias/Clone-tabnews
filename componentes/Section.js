@@ -8,15 +8,15 @@ function Section() {
       descricao: "Plataforma feita com Next, React e Postgres.",
       link: "https://github.com/DevDaviDias",
       imagem: "/img/projeto1.png"
-    }
-   /* {
+    },
+    {
       id: 2,
       titulo: "Site de Adoção",
       descricao: "Plataforma para adoção de pets com HTML, CSS e JS.",
       link: "https://bit.ly/DevDaviDias",
       imagem: "/img/projeto2.png"
-    },
-    {
+    }
+   /* {
       id: 3,
       titulo: "Projeto com Bootstrap",
       descricao: "Meu primeiro projeto usando Bootstrap.",

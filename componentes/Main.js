@@ -11,9 +11,6 @@ function Main() {
 
   return (
     <div className={`${styles.fundo1} ${darkMode ? styles.dark : ""}`} id="sobre">
-      <button onClick={toggleDarkMode}>
-        {darkMode ? "Modo Claro" : "Modo Escuro"}
-      </button>
 
       <h2 className={styles.titulo}>Minhas skills</h2>
       <p className={styles.subtitulo}>
