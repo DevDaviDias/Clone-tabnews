@@ -16,7 +16,6 @@ function Home() {
       <Header/>
       <Main/>
       <Section/>
-      <Tempo/>
       <Footer/>
       
     </div>
