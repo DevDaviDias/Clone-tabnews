@@ -15,10 +15,10 @@ function Main(){
 
    <div className={styles.iconCircle}>
   <div className="icon-circle">
-  <FaJs color="#1781cdff" size={150} />
-  <FaReact color="#61DAFB" size={150} />
-  <FaGitAlt size={150} color="#61DAFB" />
-  <FaNodeJs size={150} color="#1572B6" />
+  <FaJs color="#1781cdff" size={50} />
+  <FaReact color="#61DAFB" size={50} />
+  <FaGitAlt size={50} color="#61DAFB" />
+  <FaNodeJs size={50} color="#1572B6" />
   </div>
   </div>
 
