@@ -1,43 +1,48 @@
 import styles from "../styles/Section.module.css";
 
-function Section(){
-  const Projetos =[
+function Section() {
+  const Projetos = [
     {
       id: 1,
-      titulo:"verifica boletos",
-      descricao:"Platafroma feita com next react e postgres",
-      link: "https://github.com/DevDaviDias"
+      titulo: "Verifica Boletos",
+      descricao: "Plataforma feita com Next, React e Postgres.",
+      link: "https://github.com/DevDaviDias",
+      imagem: "/img/projeto1.png"
     },
-     {
-      id: 1,
-      titulo:"verifica boletos",
-      descricao:"Platafroma feita com next react e postgres",
-      link: "https://github.com/DevDaviDias"
+    {
+      id: 2,
+      titulo: "Site de Adoção",
+      descricao: "Plataforma para adoção de pets com HTML, CSS e JS.",
+      link: "https://bit.ly/DevDaviDias",
+      imagem: "/img/projeto2.png"
     },
-     {
-      id: 1,
-      titulo:"verifica boletos",
-      descricao:"Platafroma feita com next react e postgres",
-      link: "https://github.com/DevDaviDias"
+    {
+      id: 3,
+      titulo: "Projeto com Bootstrap",
+      descricao: "Meu primeiro projeto usando Bootstrap.",
+      link: "https://github.com/DevDaviDias",
+      imagem: "/img/projeto3.png"
     }
-
-    
   ];
 
-  return(
-  <div className={styles.fundo2} id="projetos">
-   <h2 className={styles.titulo}>Meus Projetos</h2>
-   <div className={styles.grid}>
-    {Projetos.map((projeto)=>(
-      <div key={projeto.id} className={"style.card"}>
-        <h3>{projeto.titulo}</h3>
-        <p>{projeto.descricao}</p>
-        <a href="projeto.link" target="_blank" rel="noreferrer">Ver Projeto</a>
+  return (
+    <div className={styles.fundo2} id="projetos">
+      <h2 className={styles.titulo}>Meus Projetos</h2>
+
+      <div className={styles.grid}>
+        {Projetos.map((projeto) => (
+          <div key={projeto.id} className={styles.card}>
+            <img src={projeto.imagem} alt={projeto.titulo} className={styles.imagem} />
+            <h3>{projeto.titulo}</h3>
+            <p>{projeto.descricao}</p>
+            <a href={projeto.link} target="_blank" rel="noreferrer">
+              Ver Projeto
+            </a>
+          </div>
+        ))}
       </div>
-  ))}
-   </div>
-  </div>
-  
-);
+    </div>
+  );
 }
+
 export default Section;
