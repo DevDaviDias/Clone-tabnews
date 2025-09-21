@@ -21,7 +21,7 @@ function Main(){
   <FaNodeJs size={150} color="#1572B6" />
   </div>
   </div>
-<p className={styles.paragrafo}> Em construção ...🧑‍🔧🔧</p>
+
   </div>
   
 );
