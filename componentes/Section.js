@@ -12,7 +12,7 @@ function Section() {
     {
       id: 2,
       titulo: "Site de Adoção",
-      descricao: "Plataforma para adoção de pets com HTML, CSS e JS.",
+      descricao: "Plataforma para adoção de pets com  JS, php e mysql.",
       link: "https://bit.ly/DevDaviDias",
       imagem: "/img/projeto2.png"
     }

@@ -4,6 +4,9 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 40px 40px 40px 40px;      /* Ocupa 100% da altura da tela */
+  width: 100%; 
+
  
 }
 .titulo{
