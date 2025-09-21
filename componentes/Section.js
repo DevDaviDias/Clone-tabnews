@@ -27,7 +27,7 @@ function Section(){
   return(
   <div className={styles.fundo2} id="projetos">
    <h2 className={styles.titulo}>Meus Projetos</h2>
-   <div className={Styles.grid}>
+   <div className={styles.grid}>
     {Projetos.map((projeto)=>(
       <div key={projeto.id} className={"style.card"}>
         <h3>{projeto.titulo}</h3>
