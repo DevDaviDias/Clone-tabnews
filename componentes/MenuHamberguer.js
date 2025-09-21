@@ -120,12 +120,13 @@ export default function MenuHamburguer() {
             <span className={styles.slider}></span>
           </label>
         </div>
-      </div>
-
         {/* Footer dentro do menu */}
         <div className={styles.footerMenu}>
           <p>© Copyright DaviDias</p>
         </div>
+      </div>
+
+        
 
       {/* Overlay só no mobile */}
       {!isDesktop && aberto && (
