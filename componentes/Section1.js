@@ -1,6 +1,7 @@
 import loadCustomRoutes from "next/dist/lib/load-custom-routes";
 import React from "react";
 import styles from "../styles/Section1.module.css";
+import { NodeNextRequest } from "next/dist/server/base-http/node";
 
 const experiencias = [
   {
@@ -28,6 +29,7 @@ export default function Section1() {
         <div className={styles.experiencias}>
           {experiencias.map(({ cargo, empresa, periodo, descricao }, index) => (
             <div>
+              <hr style={{border:'none',height:'2px',backgroundColor:'black'}}/>
               <div key={index} className={styles.experiencias1}>
                 <h3>{cargo}</h3>
                 <p>{empresa}</p>
