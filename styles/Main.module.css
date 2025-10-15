@@ -52,6 +52,7 @@
 @media (min-width: 1024px) {
   .titulo {
     margin-left: 4em;
+     justify-content: left;
   }
   .subtitulo {
     margin-left: 6em;
