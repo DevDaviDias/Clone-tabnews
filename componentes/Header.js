@@ -5,7 +5,7 @@ export default function Header() {
   const [text, setText] = useState("");
   const [deleting, setDeleting] = useState(false);
   const [index, setIndex] = useState(0);
-  const fullText = "Front-end";
+  const fullText = "Back-end";
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -34,11 +34,11 @@ export default function Header() {
   return (
     <div className={styles.fundo}>
       <div className={styles.titleCenter}>
-      <h1 className={styles.titulo}>Davi dias</h1>
-      <h2 className={styles.subtitulo}>
-        Developer <span className={styles.typing}>{text}</span>
-        <span className={styles.cursor}>|</span>
-      </h2>
+        <h1 className={styles.titulo}>Davi dias</h1>
+        <h2 className={styles.subtitulo}>
+          Developer <span className={styles.typing}>{text}</span>
+          <span className={styles.cursor}>|</span>
+        </h2>
       </div>
     </div>
   );
