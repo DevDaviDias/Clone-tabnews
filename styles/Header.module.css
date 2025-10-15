@@ -19,6 +19,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  
 }
 
 .titleCenter {
@@ -72,9 +73,10 @@
     margin-left: 22em;
   }
   .titulo {
-    font-size: 4em;
+    font-size: 3.5em;
   }
   .subtitulo {
-    font-size: 4em;
+    font-size: 3.5em;
   }
+
 }

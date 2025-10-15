@@ -5,11 +5,11 @@
   justify-content: center;
   flex-direction: column;
   padding: 40px 40px 40px 40px;
-  width: 100%;
+  margin: 0 auto;
 }
 .titulo {
   color: #293157;
-  font-size: 30px;
+  font-size: 2em;
 }
 
 .subtitulo {
@@ -56,10 +56,10 @@
   .subtitulo {
     margin-left: 6em;
     width: 900px;
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
   .paragrafo {
-    margin-left: 6em;
+    margin-left: 6.2em;
     font-size: 1.3em;
   }
   .iconCircle {

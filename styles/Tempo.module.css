@@ -1,16 +1,14 @@
-.tempo{
-  color:#5BD3E4;
-  
+.tempo {
+  color: #5bd3e4;
 }
 
-.tempodiv{
-background-color: #f8f8FF;
-width: 100%;
-display: flex;
-align-items: center;
+.tempodiv {
+  background-color: #f8f8ff;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .tempo.dark-mode {
   background-color: #000000;
- 
 }

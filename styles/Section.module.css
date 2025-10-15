@@ -1,22 +1,25 @@
 .fundo2 {
   padding: 40px 20px;
   background:white; /* azul claro */
-  padding: 40px 40px 40px 40px;       
-  width: 100%; 
+  padding: 40px 40px 40px 40px;  
+  width: 100%;     
 
 }
 
 .titulo {
-  font-size: 2rem;
+  font-size: 2em;
+  margin-left: 4em;
   text-align: center;
   margin-bottom: 30px;
   color: #003366; /* azul escuro para contraste */
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
+
 }
 
 .card {
@@ -68,3 +71,22 @@
 .card a:hover {
   background: #0059c1;
 }
+@media (min-width: 1024px) {
+.card {
+  width: 500px;
+  
+}
+.grid {
+  display: flex;
+  justify-content: center;
+  margin-left: 15em;
+  gap: 10px;
+}
+.titulo {
+  font-size: 2em;
+  margin-left: 7em;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #003366; /* azul escuro para contraste */
+}
+} 
