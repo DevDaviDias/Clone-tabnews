@@ -1,4 +1,4 @@
-import styles from "../styles/Section.module.css";
+import styles from "../styles/Section3.module.css";
 
 function Section() {
   const Projetos = [
@@ -32,8 +32,8 @@ function Section() {
   ];
 
   return (
-    <div className={styles.fundo2} id="projetos">
-      <h2 className={styles.titulo}>Meus Projetos</h2>
+    <div className={styles.fundo3} id="projetos">
+      <h2 className={styles.titulo3}>Meus Projetos</h2>
 
       <div className={styles.grid}>
         {Projetos.map((projeto) => (

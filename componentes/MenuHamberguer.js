@@ -18,7 +18,7 @@ export default function MenuHamburguer() {
     const handleResize = () => {
       const desktop = window.innerWidth >= 1024;
       setIsDesktop(desktop);
-      setAberto(desktop); // Se for desktop, sempre aberto
+      setAberto(desktop); 
     };
 
     handleResize(); // Executa na primeira renderização
@@ -70,7 +70,7 @@ export default function MenuHamburguer() {
               height={120}
               style={{
                 borderRadius: "50%",
-                border: "8px solid #293157", // sem ponto e vírgula
+                border: "8px solid #63DEF1", // sem ponto e vírgula
               }}
             />
           </div>
@@ -126,6 +126,11 @@ export default function MenuHamburguer() {
             <span className={styles.slider}></span>
           </label>
         </div>
+
+        <div className={styles.darkTheme}>
+          <p>Tema claro</p>
+        </div>
+
         {/* Footer dentro do menu */}
         <div className={styles.footerMenu}>
           <p>© Copyright DaviDias</p>
