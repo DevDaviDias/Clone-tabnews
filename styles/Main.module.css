@@ -1,70 +1,47 @@
 .fundo1 {
-  width: 100%;
-  align-items: center;
+  width: 90%;
+  padding: 40px 0px 40px 0px;
+  background-color: #E2FDFF;
   display: flex;
-  justify-content: center;
+  gap: 20px;
   flex-direction: column;
-  padding: 40px 40px 40px 40px;
-  margin: 0 auto;
-}
-.titulo {
-  color: #293157;
-  font-size: 2em;
-}
-
-.subtitulo {
-  color: #293157;
-  font-size: 15px;
-  width: 19em;
-  font-size: 1.1em;
-
-}
-
-.iconCircle {
-  margin-top: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/*dark mode*/
-.fundo1.dark-mode {
-  background-color: #000000;
   width: 100%;
-  padding: 40px;
+  
 }
-.titulo.dark-mode {
-  color: #f8f8ff;
+.titulo{
+  margin-left: 18em;
+
 }
-.icon-circle {
-  margin-top: 2em;
-  display: grid;
-  grid-template-columns: repeat(2, 40px);
-  grid-template-rows: repeat(2, 40px);
-  gap: 5px;
-  background: #222;
-  padding: 10px;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
+.minhahistoria{
+  background-color: #F9FEFF;
+  width: 550px;
+  height: 500px;
+  margin-left: 25em;
+  border-radius: 10px;
+  padding: 25px;
+}
+.infopessoal{
+   background-color: #F9FEFF;
+   width: 550px;
+   border-radius: 10px;
+   padding: 25px;
+  
+}
+.interesses{
+  background-color: #F9FEFF;
+  width: 550px;
+  border-radius: 10px;
+  padding: 25px;
+  
+}
+.alinhamneto{
+  display: flex;
+  gap: 30px;
+  
+}
+.alinhamneto2{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-@media (min-width: 1024px) {
-  .titulo {
-    margin-left: 4em;
-     justify-content: left;
-  }
-  .subtitulo {
-    margin-left: 6em;
-    width: 900px;
-    font-size: 1.5em;
-  }
-  .paragrafo {
-    margin-left: 6.2em;
-    font-size: 1.3em;
-  }
-  .iconCircle {
-    margin-top: 1em;
-    margin-left: 7.5em;
-  }
-}

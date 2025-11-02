@@ -1,21 +1,17 @@
 .fundo {
   background-image: linear-gradient(
     to right top,
-    #5bd3e4,
-    #63d1e6,
-    #6bcfe7,
-    #74cde8,
-    #7ccbe8,
-    #7bceeb,
-    #79d2ed,
-    #78d5f0,
-    #6ddff4,
-    #64e9f6,
-    #5ef2f5,
-    #5ffbf1
+    #07B7D5,
+    #18C9E5,
+    #1BCBE7,
+    #18C9E5,
+    #18C9E5,
+    #18C9E5,
+    #0CBDDA,
+    #1BCBE7
   );
-  padding: 40px 40px 40px 40px;
-  height: 100dvh; /* Ocupa 100% da altura da tela */
+  padding: 40px 0px 40px 0px;
+  height: 20dvh; /* Ocupa 100% da altura da tela */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -23,7 +19,7 @@
 }
 
 .titleCenter {
-  margin-top: 40%;
+  margin-top: 10px;
 
   align-items: center;
   justify-content: center;
@@ -44,7 +40,7 @@
   text-decoration: underline;
   text-decoration-color: #a2def0;
   text-underline-offset: 10px;
-  font-weight: bold;
+  font-weight: 100;
   animation: underlineColor 4s linear infinite;
 }
 
@@ -68,15 +64,15 @@
 /* Quando o menu está fixo no desktop */
 @media (min-width: 1024px) {
   .titleCenter {
-    margin-top: 10%;
+    margin-top: 5px;
     align-items: center;
-    margin-left: 22em;
+    margin-left: 25em;
   }
   .titulo {
-    font-size: 3.5em;
+    font-size: 3em;
   }
   .subtitulo {
-    font-size: 3.5em;
+    font-size: 1.8em;
   }
 
 }
