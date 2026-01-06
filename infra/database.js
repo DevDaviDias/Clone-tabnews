@@ -9,10 +9,7 @@ async function query(queryObject) {
     password: process.env.POSTGRES_PASSWORD,
     ssl:process.env.NODE_ENV === "development" ? false : true,
   });
-console.log("Credenciais do Prostgress",{
-  
-}
-)  
+
 
 try {
   await client.connect();
